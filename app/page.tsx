@@ -2,6 +2,7 @@
 
 import { CartPopup } from '@/components/CartPopUp';
 import { Categories } from '@/components/Categories';
+import CategorySection from '@/components/CategorySection';
 import { Menu } from '@/components/Menu';
 import { Products } from '@/components/Products';
 // import SearchBarr from '@/components/SearchBarr';
@@ -64,7 +65,8 @@ export default function Home() {
             isIntersecting ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'
           }`}
         >
-          <Categories/>
+          <CategorySection/>
+          {/* <Categories/> */}
           <Products addToCart={addToCart} cartItems={cartItems} />
         </div>
       </main>
